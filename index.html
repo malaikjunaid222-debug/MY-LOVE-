@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>For My Love ❤️</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Password Screen -->
+    <div class="password-screen" id="passwordScreen">
+        <div class="password-box">
+            <h2>🔐 Private Access</h2>
+            <p>Sirf meri jaan ke liye</p>
+            <input type="password" id="passwordInput" placeholder="Password daalo">
+            <button onclick="checkPassword()">Enter</button>
+            <p id="errorMessage" class="error"></p>
+        </div>
+    </div>
+
+    <!-- Main Content -->
+    <div class="container" id="mainContent" style="display: none;">
+        <div class="heart" onclick="showLove()">❤️</div>
+        <h1 id="message">Hello Meri Jaan! 👋</h1>
+        <p class="subtitle">Yeh button dabao na zara...</p>
+        
+        <button class="love-button" onclick="showLove()">
+            I Love You
+        </button>
+        
+        <div class="hidden-message" id="hiddenMessage">
+            <h2>I Love You Meri Jaan! ❤️</h2>
+            <p>Main naraz nahi hoon, bas tumhara intezaar kar rahi thi</p>
+            <p class="signature">- Tumhara Apna</p>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1"></script>
+    <script src="script.js"></script>
+</body>
+</html>

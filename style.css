@@ -1,0 +1,166 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Password Screen */
+.password-screen {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(135deg, #ff6b6b, #ff8e8e);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.password-box {
+    background: white;
+    padding: 2rem;
+    border-radius: 20px;
+    text-align: center;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+    max-width: 90%;
+    width: 350px;
+}
+
+.password-box h2 {
+    color: #ff4757;
+    margin-bottom: 10px;
+}
+
+.password-box p {
+    color: #666;
+    margin-bottom: 20px;
+}
+
+.password-box input {
+    width: 100%;
+    padding: 12px;
+    border: 2px solid #ff4757;
+    border-radius: 10px;
+    font-size: 1rem;
+    margin-bottom: 15px;
+    outline: none;
+}
+
+.password-box button {
+    background: #ff4757;
+    color: white;
+    border: none;
+    padding: 12px 30px;
+    font-size: 1rem;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.password-box button:hover {
+    background: #ff6b81;
+    transform: translateY(-2px);
+}
+
+.error {
+    color: red;
+    margin-top: 10px;
+    font-size: 0.9rem;
+}
+
+/* Main Content */
+.container {
+    text-align: center;
+    background: rgba(255, 255, 255, 0.95);
+    padding: 2rem;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    max-width: 90%;
+    width: 500px;
+    margin: 20px auto;
+}
+
+.heart {
+    font-size: 100px;
+    cursor: pointer;
+    animation: heartbeat 1.5s ease-in-out infinite;
+    margin-bottom: 20px;
+}
+
+@keyframes heartbeat {
+    0% { transform: scale(1); }
+    25% { transform: scale(1.1); }
+    50% { transform: scale(1); }
+    75% { transform: scale(1.1); }
+    100% { transform: scale(1); }
+}
+
+h1 {
+    color: #ff4757;
+    margin-bottom: 10px;
+    font-size: 2rem;
+}
+
+.subtitle {
+    color: #666;
+    margin-bottom: 30px;
+    font-size: 1.1rem;
+}
+
+.love-button {
+    background: #ff4757;
+    color: white;
+    border: none;
+    padding: 15px 40px;
+    font-size: 1.2rem;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 5px 15px rgba(255, 71, 87, 0.4);
+    margin-bottom: 30px;
+}
+
+.love-button:hover {
+    background: #ff6b81;
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(255, 71, 87, 0.6);
+}
+
+.hidden-message {
+    display: none;
+    padding: 20px;
+    background: linear-gradient(135deg, #fff0f0, #ffe0e0);
+    border-radius: 15px;
+    border: 2px solid #ff4757;
+    margin-top: 20px;
+}
+
+.hidden-message h2 {
+    color: #ff4757;
+    margin-bottom: 15px;
+}
+
+.hidden-message p {
+    color: #333;
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+}
+
+.signature {
+    font-style: italic;
+    color: #ff4757 !important;
+    margin-top: 15px;
+    font-size: 1.2rem !important;
+}
+
+.show {
+    display: block !important;
+    animation: fadeIn 0.5s ease;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
